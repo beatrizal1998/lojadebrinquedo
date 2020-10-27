@@ -377,8 +377,6 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
            
             String linhasql = "select * from clientes where cpf = '" +CPF+"'";
             
-            JOptionPane.showInputDialog(CPF);
-
             st.executeUpdate(linhasql);
             JOptionPane.showMessageDialog(null, "Consulta efetuada com sucesso!");
         } catch (HeadlessException | SQLException e) {
